@@ -29,27 +29,37 @@ body{
     flex-direction: column;
     color: white;
     margin: 2rem;
-    gap: 5rem;
+    gap: 4rem;
 }
 
 .card_logo{
     width: 5rem;
     height: 3rem;
+    margin-left: 0.5rem;
 }
 
 .card_informations{
     display: flex;
-    width: 25rem;
+    width: 23rem;
     margin-top: 1.5rem;
     text-transform: uppercase;
     font-size: 0.8rem;
     letter-spacing: 0.10rem;
-    
+    margin-left: 0.4rem;
     text-shadow: 1px 1px 2px rgb(41, 15, 63);
 }
 
 .card_name{
     width: 21rem;
+}
+
+.card_number{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 450;
+    margin-bottom: 2rem;
+    letter-spacing: 0.20rem;
+    text-shadow: 1px 1px 2px rgb(41, 15, 63);
 }
 
 
