@@ -62,4 +62,20 @@ body{
     text-shadow: 1px 1px 2px rgb(41, 15, 63);
 }
 
+.card_back{
+    z-index: 2;
+    position: absolute;
+    left: 15rem;
+    bottom: 10rem;
+}
+
+.card_back_number{
+    z-index: 3;
+    position: absolute;
+    right: 3.5rem;
+    top : 7rem;
+    color: white;
+    letter-spacing: 0.10rem;
+    font-weight: 450;
+}
 
