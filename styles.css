@@ -13,7 +13,7 @@ body{
 .left_section{
     background-image: url("./images/bg-main-desktop.png");
     background-repeat: no-repeat;
-    width: 100%;
+    width: 50%;
     height: 100vh;
     z-index: 1;
 }
@@ -95,12 +95,12 @@ body{
 
 .right_section{
     margin: auto;
-    margin-right: 30rem;
     text-transform: uppercase;
     font-size: 0.7rem;
     font-weight: 500;
     letter-spacing: 0.10rem;
     color:  rgb(41, 15, 63);
+    width: 20%;
 }
 
 .input-container{
@@ -152,6 +152,23 @@ body{
 
 .input_date_cvc label{
     padding-bottom: 0.5rem;
+}
+
+input:hover, button:hover{
+    cursor: pointer;
+}
+
+/* 
+input:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    outline-width: 3px;
+    -webkit-outline-image: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%)) 1 round;
+} */
+
+.inputColor:focus{
+    outline-color: hsl(0, 100%, 66%);
+    outline-width: 1px;
 }
 
 .button_confirm{
