@@ -1,30 +1,32 @@
-//dynamisation du nom
+// récupération de la valeur de l'input pour le champ du nom et mise en place sur la carte 
 const inputNameElmt = document.getElementById("cardName");
 const nameOnTheCard = document.querySelector(".card_name");
 function handleKeyboardForName (event) {
     const keyValue = event.target.value;
-    nameOnTheCard.innerHTML = keyValue;
+    nameOnTheCard.textContent = keyValue;
 };
 inputNameElmt.addEventListener("keyup", handleKeyboardForName);
 
 
-//dynamisation du numéro
+// récupération de la valeur de l'input pour le champ du numéro et mise en place sur la carte 
 const inputNumberElmt = document.getElementById("cardNumber");
 const numberOnTheCard = document.querySelector(".card_number");
 function handleKeyboardForNumber (event) {
     const keyValue = event.target.value;
-    numberOnTheCard.innerHTML = keyValue;
+    //on enlève tous les espaces reçues et on en met un tous les 4 chiffres automatiquement grâce aux regex ci-après
+    const formattedValue = keyValue.replace(/\s+/g, '').replace(/(\d{4})/g, '$1 ');
+    numberOnTheCard.textContent = formattedValue;
 };
 inputNumberElmt.addEventListener("keyup", handleKeyboardForNumber);
 
 
 
-//dynamisation de la date d'expiration
+// récupération de la valeur de l'input pour le champ du mois et de l'année et mise en place sur la carte 
 const inputMonthElmt = document.getElementById("month");
 const monthOnTheCard = document.querySelector(".month");
 function handleKeyboardForMonth (event) {
     const keyValue = event.target.value;
-    monthOnTheCard.innerHTML = keyValue;
+    monthOnTheCard.textContent = keyValue;
 };
 inputMonthElmt.addEventListener("keyup", handleKeyboardForMonth);
 
@@ -32,17 +34,17 @@ const inputYearElmt = document.getElementById("year");
 const yearOnTheCard = document.querySelector(".year");
 function handleKeyboardForYear (event) {
     const keyValue = event.target.value;
-    yearOnTheCard.innerHTML = keyValue;
+    yearOnTheCard.textContent = keyValue;
 };
 inputYearElmt.addEventListener("keyup", handleKeyboardForYear);
 
 
 
-//dynamisation du cvc
+//récupération de la valeur de l'input pour le champ du cdc et mise en place sur la carte 
 const inputCvcElmt = document.getElementById("cvc");
 const cvcOnTheCard = document.querySelector(".card_back_number");
 function handleKeyboardForCvc (event) {
     const keyValue = event.target.value;
-    cvcOnTheCard.innerHTML = keyValue;
+    cvcOnTheCard.textContent = keyValue;
 };
 inputCvcElmt.addEventListener("keyup", handleKeyboardForCvc);
